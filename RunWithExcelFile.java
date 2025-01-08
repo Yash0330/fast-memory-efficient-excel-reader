@@ -1,7 +1,7 @@
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class RunWithExcelFile {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         FastExcelReader reader = new FastExcelReader();
         String filePath = "C:\\Users\\yashw\\Downloads\\fast-memory-efficient-excel-reader\\my_data.xlsx";
 
