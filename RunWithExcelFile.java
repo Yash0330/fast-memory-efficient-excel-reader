@@ -4,7 +4,6 @@ public class RunWithExcelFile {
     public static void main(String[] args) throws InterruptedException {
         FastExcelReader reader = new FastExcelReader();
         String filePath = "C:\\Users\\yashw\\Downloads\\fast-memory-efficient-excel-reader\\my_data.xlsx";
-        Thread.sleep(10 * 1000);
 
         long startTime = System.nanoTime();
         try {
