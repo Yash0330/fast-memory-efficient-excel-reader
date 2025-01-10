@@ -14,6 +14,12 @@
 
 ---
 
+## Installation
+
+Clone the repository and copy the `FastExcelReader.java` library into your project's `lib` or `dependencies` directory.
+
+---
+
 ## Usage
 
 ### Basic Example
