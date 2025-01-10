@@ -318,10 +318,13 @@ public class FastExcelReader {
      * @return the zero-based column index.
      */
     private int getColumnIndex(String cellRef) {
-        String colRef = cellRef.replaceAll("\\d", ""); // Extract the column part (e.g., "A" from "A1")
         int colIndex = 0;
-        for (int i = 0; i < colRef.length(); i++) {
-            colIndex = colIndex * 26 + (colRef.charAt(i) - 'A' + 1);
+        for (int i = 0; i < cellRef.length(); i++) {
+            char ch = cellRef.charAt(i);
+            if (Character.isDigit(ch)) {
+                break; // Stop when digits are encountered
+            }
+            colIndex = colIndex * 26 + (ch - 'A' + 1);
         }
         return colIndex - 1; // Convert to zero-based index
     }
